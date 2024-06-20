@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package metricMessage;
+
+message Metric {
+  string metricName = 2;
+  int32 value = 5;
+  string timestamp = 4; // Using string to simplify handling of date types
+  string host = 1;
+  string region = 3;
+}
